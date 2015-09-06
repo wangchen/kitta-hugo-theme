@@ -21,6 +21,14 @@ body {
 	overflow-x: hidden;
 }
 
+#top-bar {
+	position: fixed;
+	width: 100%;
+	left:0px;
+	top:0px;
+	z-index: 999;
+}
+
 a {
 	text-decoration: none;
 	color: #ed8151;

@@ -6,11 +6,10 @@
 </head>
 
 <body>
+    {{ partial "header.html" . }}
     <div id="perspective" class="perspective effect-moveleft">
   			<div class="container">
-  				<div class="wrapper"><!-- wrapper needed for scroll -->
-  					<!-- Top Navigation -->
-  					{{ partial "header.html" . }}
+  				<div class="wrapper">
   					<header class="codrops-header">
   						<h1>{{ .Title }} <span>{{ .Date.Format "Jan 2, 2006 " }}</span></h1>
   					</header>

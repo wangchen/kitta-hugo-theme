@@ -4,12 +4,12 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2013, Codrops
  * http://www.codrops.com
  */
 (function() {
-	
+
 	function scrollY() {
 		return window.pageYOffset || docElem.scrollTop;
 	}
@@ -55,6 +55,7 @@
 			classie.add( perspectiveWrapper, 'modalview' );
 			// animate..
 			setTimeout( function() { classie.add( perspectiveWrapper, 'animate' ); }, 25 );
+			document.getElementById( 'top-bar' ).style.display='none';
 		});
 
 		container.addEventListener( clickevent, function( ev ) {
@@ -67,6 +68,7 @@
 					document.body.scrollTop = document.documentElement.scrollTop = docscroll;
 					// change top of contentWrapper
 					contentWrapper.style.top = '0px';
+					document.getElementById( 'top-bar' ).style.display='block';
 				};
 				if( support ) {
 					perspectiveWrapper.addEventListener( transEndEventName, onEndTransFn );
