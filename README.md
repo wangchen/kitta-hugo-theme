@@ -1,0 +1,1 @@
+# kitta-hugo-theme
