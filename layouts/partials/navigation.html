@@ -1,0 +1,8 @@
+<p><small>Categories &amp; Pages Navigation here.</small></p>
+{{ range .Site.Menus.main }}
+<a href="{{ .URL }}" class="icon-news">{{ .Name }}</a>
+{{end}}
+<p><small>Contact me here.</small></p>
+{{ with .Site.Params.GithubID }}
+<a href="https://github.com/{{.}}"><i class="fa fa-github"></i></a></li>
+{{ end }}
